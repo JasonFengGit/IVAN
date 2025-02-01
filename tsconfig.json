@@ -1,0 +1,82 @@
+{
+  "compilerOptions": {
+    "types": [
+      "react",
+      "react-dom"
+    ],
+    "jsx": "preserve",
+    "noImplicitAny": false,
+    "experimentalDecorators": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    //"jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./*"
+      ],
+      "@/hooks/*": [
+        "components/navi/hooks/*"
+      ],
+      "@/store/*": [
+        "components/navi/store/*"
+      ],
+      "@/contexts/*": [
+        "components/navi/contexts/*"
+      ],
+      "@/config/*": [
+        "components/navi/config/*"
+      ],
+      "@/sui/*": [
+        "components/navi/sui/*"
+      ],
+      "@/services/*": [
+        "components/navi/services/*"
+      ],
+      "@/navicomponents/*": [
+        "components/navi/components/*"
+      ],
+      "@/api/*": [
+        "components/navi/api/*"
+      ],
+      "@/define": [
+        "components/navi/define.ts"
+      ],
+      "@/swap": [
+        "components/swap/*"
+      ]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "strictNullChecks": true,
+    "target": "ES2017"
+  },
+  "include": [
+    "next-env.d.ts",
+    "next-auth.d.ts",
+    "particle-network.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
