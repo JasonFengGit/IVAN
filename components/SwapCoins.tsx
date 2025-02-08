@@ -7,7 +7,7 @@ import { show } from '@ebay/nice-modal-react';
 import ConnectWalletDialog from './navi/components/common/ConnectWalletDialog';
 import { useNetWork } from './navi/sui/hook';
 import { useSignTransaction } from '@mysten/dapp-kit';
-import useChecksumAccount from '@/lib/useChecksumAccount';
+import useSUIWallet from '@/lib/useSUIWallet';
 import './swap.css'
 interface SwapPanelProps {
     from: string;

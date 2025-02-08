@@ -1,6 +1,6 @@
 import { useCurrentAccount } from '@mysten/dapp-kit';
 
-const useChecksumAccount = () => {
+const useSUIWallet = () => {
     const account = useCurrentAccount();
 
     // Convert the address to checksum format if it exists
@@ -20,4 +20,4 @@ const useChecksumAccount = () => {
     };
 };
 
-export default useChecksumAccount;
+export default useSUIWallet;

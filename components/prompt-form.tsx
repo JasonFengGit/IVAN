@@ -11,7 +11,7 @@ import {
 } from '@/components/ui/tooltip'
 import { IconArrowElbow, IconPlus } from '@/components/ui/icons'
 import { useRouter } from 'next/navigation'
-import useChecksumAccount from '@/lib/useChecksumAccount'
+import useSUIWallet from '@/lib/useSUIWallet'
 import { ConnectModal, useCurrentAccount } from '@mysten/dapp-kit';
 import { useState } from 'react'
 
@@ -35,7 +35,7 @@ export function PromptForm({
       inputRef.current.focus()
     }
   }, [])
-  const {address} = useChecksumAccount()
+  const {address} = useSUIWallet()
   //console.log(address)
   const [open, setOpen] = useState(false);
   return (

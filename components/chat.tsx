@@ -21,7 +21,7 @@ import { Button } from './ui/button'
 import { Input } from './ui/input'
 import { toast } from 'react-hot-toast'
 import { usePathname, useRouter } from 'next/navigation'
-import useChecksumAccount from '@/lib/useChecksumAccount'
+import useSUIWallet from '@/lib/useSUIWallet'
 import { useAllReserveData, useGetInitHealthFactor, useGetReserveData, useGetWalletBalance, useMarketInfo } from './navi/hooks/useContract'
 import { SwapCoins } from './SwapCoins'
 import { Supply } from './Supply'
@@ -69,7 +69,7 @@ export function Chat({ id, initialMessages, className }: ChatProps) {
     'ai-token',
     null
   )
-  const { address } = useChecksumAccount()
+  const { address } = useSUIWallet()
 
   const [previewTokenDialog, setPreviewTokenDialog] = useState(IS_PREVIEW)
   const [previewTokenInput, setPreviewTokenInput] = useState(previewToken ?? '')

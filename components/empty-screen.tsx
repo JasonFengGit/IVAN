@@ -13,7 +13,7 @@ import { Portfolio } from './Portfolio'
 import { Market } from './Market'
 import { SingleAsset } from './SingleAsset'
 import { ConnectModal } from '@mysten/dapp-kit'
-import useChecksumAccount from '@/lib/useChecksumAccount'
+import useSUIWallet from '@/lib/useSUIWallet'
 //import SwapBlock from './navi/SwapBlock'
 
 const exampleMessages = [
@@ -32,7 +32,7 @@ const exampleMessages = [
 ]
 
 function EmptyScreenC({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
-  const {address} = useChecksumAccount()
+  const {address} = useSUIWallet()
   const [open, setOpen] = useState(false);
   
   return (
