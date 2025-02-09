@@ -11,7 +11,7 @@ import '@mysten/dapp-kit/dist/index.css';
 
 
 const metadata = {
-  metadataBase: new URL(`http://localhost:3000`),
+  metadataBase: new URL(`https://ivanai.io`),
   title: {
     default: 'IVAN',
     template: `%s - IVAN`
